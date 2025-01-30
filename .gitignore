@@ -401,3 +401,6 @@ FodyWeavers.xsd
 
 # amoebas folder
 amoebas_venv/
+
+# Exported Objs
+Exportedobjs/
