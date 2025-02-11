@@ -401,6 +401,12 @@ FodyWeavers.xsd
 
 # amoebas folder
 amoebas_venv/
+rcs/img/
+cache/
+elevation_img/
+overlay_img/
+street_img/
+
 
 # Exported Objs
 Exportedobjs/
