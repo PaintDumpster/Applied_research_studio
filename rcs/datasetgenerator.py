@@ -9,55 +9,18 @@ import ee
 import geemap
 import rasterio
 from PIL import Image
+import pandas as pd
 
 
 
 # list of cities
-cities_list_2 = [
-    "Tokyo, Japan", "Delhi, India", "Shanghai, China", "Sao Paulo, Brazil", "Cairo, Egypt",
-    "Mumbai, India", "Beijing, China", "Dhaka, Bangladesh", "Mexico City, Mexico", "Osaka, Japan",
-    "Karachi, Pakistan", "Chongqing, China", "Istanbul, Turkey", "Buenos Aires, Argentina", "Kolkata, India",
-    "Kinshasa, DR Congo", "Lagos, Nigeria", "Manila, Philippines", "Rio de Janeiro, Brazil", "Guangzhou, China",
-    "Los Angeles, USA", "Moscow, Russia", "Shenzhen, China", "Lahore, Pakistan", "Bangalore, India",
-    "Paris, France", "Bogota, Colombia", "Jakarta, Indonesia", "Chennai, India", "Lima, Peru",
-    "Bangkok, Thailand", "Hyderabad, India", "Seoul, South Korea", "Nagoya, Japan", "London, UK",
-    "New York, USA", "Ho Chi Minh City, Vietnam", "Hong Kong, China", "Ahmadabad, India", "Kuala Lumpur, Malaysia",
-    "Foshan, China", "Hanoi, Vietnam", "Santiago, Chile", "Baghdad, Iraq", "Madrid, Spain",
-    "Toronto, Canada", "Belo Horizonte, Brazil", "Singapore, Singapore", "Pune, India", "Houston, USA",
-    "Riyadh, Saudi Arabia", "Dallas, USA", "Dalian, China", "Guadalajara, Mexico", "Miami, USA",
-    "Philadelphia, USA", "Atlanta, USA", "Fukuoka, Japan", "Zhengzhou, China", "Sydney, Australia",
-    "Saint Petersburg, Russia", "Shenyang, China", "Changsha, China", "Chengdu, China", "Chicago, USA",
-    "Nanjing, China", "Wuhan, China", "Luanda, Angola", "Dar es Salaam, Tanzania", "Kabul, Afghanistan",
-    "Accra, Ghana", "Khartoum, Sudan", "San Francisco, USA", "Montreal, Canada", "Barcelona, Spain",
-    "Qingdao, China", "Jinan, China", "Algiers, Algeria", "Melbourne, Australia", "Casablanca, Morocco",
-    "Alexandria, Egypt", "Taipei, Taiwan", "Abidjan, Ivory Coast", "Cape Town, South Africa", "Hefei, China",
-    "Tianjin, China", "Dongguan, China", "Faisalabad, Pakistan", "Addis Ababa, Ethiopia", "Surat, India",
-    "Johannesburg, South Africa", "Shijiazhuang, China", "Rome, Italy", "Harbin, China", "Ankara, Turkey",
-    "Brasilia, Brazil", "Munich, Germany", "Naples, Italy", "Milan, Italy", "Porto Alegre, Brazil",
-    "Monterrey, Mexico", "Phoenix, USA", "Bandung, Indonesia", "Tashkent, Uzbekistan", "Vienna, Austria",
-    "Jeddah, Saudi Arabia", "Lisbon, Portugal", "Budapest, Hungary", "Aleppo, Syria", "Baku, Azerbaijan",
-    "Xian, China", "Antananarivo, Madagascar", "Hong Kong", "Sofia, Bulgaria", "San Diego, USA",
-    "Porto, Portugal", "Helsinki, Finland", "Hamburg, Germany", "Stuttgart, Germany", "Liverpool, UK",
-    "Cleveland, USA", "Charlotte, USA", "Edinburgh, UK", "Oslo, Norway", "Copenhagen, Denmark",
-    "Brisbane, Australia", "Athens, Greece", "Perth, Australia", "Detroit, USA", "St Louis, USA",
-    "Boston, USA", "Prague, Czech Republic", "Brussels, Belgium", "Warsaw, Poland", "Kiev, Ukraine",
-    "Zurich, Switzerland", "Stockholm, Sweden", "Lviv, Ukraine", "Belgrade, Serbia", "Bucharest, Romania",
-    "Santo Domingo, Dominican Republic", "San Jose, Costa Rica", "Manama, Bahrain", "Islamabad, Pakistan",
-    "Kingston, Jamaica", "Doha, Qatar", "Panama City, Panama", "Nassau, Bahamas", "Reykjavik, Iceland",
-    "Luxembourg City, Luxembourg", "San Salvador, El Salvador", "La Paz, Bolivia", "Suva, Fiji",
-    "Thimphu, Bhutan", "Bandar Seri Begawan, Brunei", "Minsk, Belarus", "Nicosia, Cyprus", "Ljubljana, Slovenia",
-    "Tallinn, Estonia", "Riga, Latvia", "Vilnius, Lithuania", "Tirana, Albania", "Podgorica, Montenegro",
-    "Skopje, North Macedonia", "Sarajevo, Bosnia and Herzegovina", "Malabo, Equatorial Guinea", "Port Moresby, Papua New Guinea",
-    "San Juan, Puerto Rico", "Honiara, Solomon Islands", "Apia, Samoa", "Port Louis, Mauritius", "Basseterre, Saint Kitts and Nevis",
-    "Castries, Saint Lucia", "Kingstown, Saint Vincent and the Grenadines", "Paramaribo, Suriname", "Dili, East Timor",
-    "N'Djamena, Chad", "Nouakchott, Mauritania", "Banjul, Gambia", "Port-au-Prince, Haiti", "Conakry, Guinea",
-    "Porto-Novo, Benin", "Lome, Togo", "Niamey, Niger", "Kigali, Rwanda", "Praia, Cape Verde",
-    "Majuro, Marshall Islands", "Palikir, Micronesia", "Yamoussoukro, Ivory Coast", "Rabat, Morocco", "Sanaa, Yemen",
-]
+# Read the CSV file
+df = pd.read_csv('rcs/cities_list.csv')
+print(df)
+# Assume the column you want to convert to a list is named 'your_column'
+cities_list = df['City, Country'].tolist()
 
-cities_list3=["Talca, chile", "Fukuoka, Japan", "Palikir, Micronesia", "Majuro, Marshall Islands", "Tirana, Albania"]
-
-cities_list=["samara, russia"]
+cities_list2=["samara, russia"]
 
 #_____________________________________________________________________________________________________________________________________________________________________
 
@@ -203,11 +166,11 @@ def overlay_maps(city_name):
     print(f"✅ Overlay saved: {overlay_file}")
 
     # Show the overlay image
-    plt.figure(figsize=(8, 8))
+    '''plt.figure(figsize=(8, 8))
     plt.imshow(cv2.cvtColor(overlay_result, cv2.COLOR_BGR2RGB))
     plt.axis("off")
     plt.title(f"Overlay of {city_name} Elevation & Streets")
-    plt.show()
+    plt.show()'''
 
     # Download the overlay image
     '''files.download(overlay_file)'''
