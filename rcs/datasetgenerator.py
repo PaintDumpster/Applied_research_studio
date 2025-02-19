@@ -153,13 +153,14 @@ def overlay_maps(city_name):
     # Convert elevation to 3-channel grayscale (so it can blend with color)
     elevation_colored = cv2.cvtColor(elevation_resized, cv2.COLOR_GRAY2BGR)
 
-    # Convert street layout to white lines on transparent background
-    street_edges = cv2.Canny(street_img, 50, 150)  # Edge detection
+    # Extract street edges and create an overlay (red edges)
+    street_gray = cv2.cvtColor(street_img, cv2.COLOR_BGR2GRAY)
+    _, street_edges = cv2.threshold(street_gray, 200, 255, cv2.THRESH_BINARY_INV)  # Detect full streets
     street_overlay = np.zeros_like(elevation_colored)
-    street_overlay[street_edges > 0] = (0, 0, 255)  # Color edges red (change color if needed)
-
-    # Blend the images with transparency
-    overlay_result = cv2.addWeighted(elevation_colored, 1, street_overlay, 1, 0)
+    street_overlay[street_edges ==255] = (0, 0, 255)  # Red color for streets
+    # Directly replace street pixels in the elevation image (no blending)
+    overlay_result = elevation_colored.copy()
+    overlay_result[street_edges == 255] = (0, 0, 255)  # Apply red only to street lines
 
     # Save the overlay image
     cv2.imwrite(overlay_file, overlay_result)
