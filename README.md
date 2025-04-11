@@ -1,5 +1,9 @@
 # Applied_research_studio
 
+## Abstract
+
+## Project Structure
+
 1. Project Details / Research Problem
 
 
@@ -67,3 +71,11 @@ Back End Prototype
 
 
 Integrated Backend and Front End
+
+## Meetings
+
+### Cynthia Fenton:
+
+#### QUestions:
+
+#### Notes:
