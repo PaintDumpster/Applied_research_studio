@@ -76,6 +76,13 @@ Integrated Backend and Front End
 
 ### Cynthia Fenton:
 
-#### QUestions:
+#### Questions:
+
+1- Could you tell us about your work and what are th key roles that you fulill in a project.
+ 2.1- what are the key tasks.
+ 3.2- Is your work simmilar between projects or it changes a lot between project to project.
+
+2- 
+3- 
 
 #### Notes:
