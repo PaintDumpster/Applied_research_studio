@@ -78,11 +78,11 @@ Integrated Backend and Front End
 
 #### Questions:
 
-1- Could you tell us about your work and what are th key roles that you fulill in a project.
- 2.1- what are the key tasks.
- 3.2- Is your work simmilar between projects or it changes a lot between project to project.
+**1-** Could you tell us about your work and what are th key roles that you fulill in a project.<br>
+ **2.1-** what are the key tasks.<br>
+ **3.2-** Is your work simmilar between projects or it changes a lot between project to project.<br>
 
-2- 
-3- 
+**2-** <br>
+**3-** <br>
 
 #### Notes:
