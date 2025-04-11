@@ -82,7 +82,8 @@ Integrated Backend and Front End
  **2.1-** what are the key tasks.<br>
  **3.2-** Is your work simmilar between projects or it changes a lot between project to project.<br>
 
-**2-** <br>
-**3-** <br>
+**2-** what softwares do you normally use?<br>
+
+**3-** what are some of the mst important issues that you stumble upon during your work and how do you usually come around them.<br>
 
 #### Notes:
