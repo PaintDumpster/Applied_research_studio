@@ -87,3 +87,41 @@ Integrated Backend and Front End
 **3-** what are some of the mst important issues that you stumble upon during your work and how do you usually come around them.<br>
 
 #### Notes:
+
+35 yo 
+three cats 3 dogs and thre snakes
+hobby as an artist, gamer, 
+
+originallly wanted to do concept art
+not a lot of 
+
+they would give me a 
+
+in aaa you have the priviliege of being very specific
+
+aaa companies are super stable 
+
+4 to 5 people. i would interact with a lot different teams.
+
+many of the software used in aaa companies are propietary.
+
+pbi, fracture, but mostly maya.
+
+i was given the assets more or less ready
+the more detailed the asset you want to brake the better.
+
+everything had to be very triangular and create quads out of those.
+we have never used ai.
+
+it is one thing to create a model and another to make sure that it is optimize for game development.
+
+aaa. the equipment tha software and the level of experience is top notch compared to 
+they would be more likely to teach you other skillsets so you become more of a generalist. 
+
+they looks for seniority 
+
+make sure that crunch will 
+
+some companies use blender.
+
+how are you handling to much geometry. 
