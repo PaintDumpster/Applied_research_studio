@@ -1,5 +1,17 @@
 # Applied_research_studio
 
+PROJECT MEMBERS:
+
+- Ramy Anka
+
+- Salvador Cantuarias
+
+- Nouhaila ELMALOULI
+
+- Misra Ozgok
+
+- Elena Papakosta
+
 ## Abstract
 
 ## Project Structure
