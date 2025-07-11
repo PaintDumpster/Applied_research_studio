@@ -1,3 +1,7 @@
+## Abstract
+
+This project explores applied research in AI, design, and game development workflows, with a focus on cross-functional collaboration and technical prototyping.
+
 # Applied_research_studio
 
 PROJECT MEMBERS:
